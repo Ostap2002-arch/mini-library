@@ -1,4 +1,18 @@
-def print_table(data):
+from typing import List
+
+
+def print_table(data: List[dict]) -> None:
+    """Функция печати списка книг.
+
+    Эта функция печатает список книг в виде таблицы.
+
+    Args:
+        data (List[dict]): Список книг.
+
+    Returns:
+        None
+    """
+
     headers = ['id', 'title', 'author', 'year', 'status']
     col_widths = {header: len(header) for header in headers}
 
